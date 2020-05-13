@@ -42,3 +42,13 @@
 	padding-left: 5px;
 	padding-top: 5px;
 }
+.tampil{
+	margin:70px 10px 10px 120px;
+	border-radius: 20px;
+	flex-basis: 150px;
+	height:200px;
+	width: 200px;
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: #E0FFFF;
+}
