@@ -1,0 +1,28 @@
+*{
+	box-sizing: border-box;
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+	
+}
+.back{
+	margin-top: 0px;
+	flex-basis: 500px;
+	height: 600px;
+	background: #134711;
+	padding: 20px;
+}
+.frame{
+	margin:10px 10px 10px 10px;
+	flex-basis: 300px;
+	height:540px;
+	background: #fff; 
+	border-radius: 30px;
+}
+.tombol{
+	margin-top: 30px;
+	margin-left: 80px;
+}
