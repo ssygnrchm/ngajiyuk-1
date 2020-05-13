@@ -19,10 +19,26 @@
 	margin:10px 10px 10px 10px;
 	flex-basis: 300px;
 	height:540px;
-	background: #fff; 
+	background-image: url(); 
 	border-radius: 30px;
 }
 .tombol{
 	margin-top: 30px;
 	margin-left: 80px;
+}
+.huruf{
+	margin-top: 50px;
+	margin-left: 30px;
+}
+.atas{
+	margin-left: 15px;
+	padding-top:10px;
+}
+.belajar{
+	margin:50px 10px 10px 10px;
+	flex-basis: 250px;
+	height:353px;
+	background: #FFEBCD;
+	padding-left: 5px;
+	padding-top: 5px;
 }
