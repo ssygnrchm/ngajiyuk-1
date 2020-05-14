@@ -14,9 +14,9 @@
 				<img src="image/fixed-home - app ngaji.png" width="170px" height="230px" style="margin-top: 100px;">
 				<img src="image/cat3.png" width="130px" height="200px"style="margin-top: 100px;padding-right: 5px;">
 				<div class="tombol">
-					<a href="https://www.w3schools.com"><img src="image/tombol/belajar.png" width="100px" style="padding-right: 15px;"></a>
-					<a href="https://www.w3schools.com"><img src="image/tombol/bermain.png" width="100px"style="padding-right: 15px;"></a>
-					<a href="https://www.w3schools.com"><img src="image/tombol/doa.svg" width="100px"style="padding-right: 15px;"></a>
+					<a href="belajar.html"><img src="image/tombol/home/belajar.png" width="100px" style="padding-right: 15px;"></a>
+					<a href=tebaksuara.html><img src="image/tombol/home/bermain.png" width="100px"style="padding-right: 15px;"></a>
+					<a href="doa.html"><img src="image/tombol/home/doa.png" width="100px"style="padding-right: 15px;"></a>
 				</div>
 			</div>
 		</div>
