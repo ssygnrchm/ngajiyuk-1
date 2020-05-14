@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Qa!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css"> 
+</head>
+<body>
+	<audio id="myAudio">
+  		<source src="" type="audio/ogg">
+	</audio>
+
+
+	<div class="container">
+		<div class="back">
+			<div class="frame">
+				<div class="atas">
+					<a href="home.html"><img src="image/fixed-PANAH PNG.png" width="65px"></a>
+				</div>
+				<div class="tampil">
+					<img src="image/left-arrow.png" width="25px" style="margin-bottom: 80px;cursor: pointer;" onclick="load_left(ItemUpdate)">
+					<img src="" width="180px" id="myGif" onclick="load(ItemUpdate); play(ItemUpdate)" style="margin-top: 30px;cursor: pointer;">
+					<img src="image/right-arrow.png" width="25px" style="margin-bottom: 80px;cursor: pointer;" onclick="load_right(ItemUpdate)">
+				</div>
+				<img src="image/cat7.png" width="200px">
+				<img src="image/cat4.png" width="200px" style="margin-left: 30px">
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		//buat ngambil variabel dari belajar.html. nantinya dipake buat manggil gif sama suara
+		var ItemName = localStorage.getItem("IdItem");
+		//dipake biar nilai ItemName berubah setiap diklik panah kanan atau kiri
+		var ItemUpdate= parseInt(ItemName);
+		document.getElementById('myGif').src = "animation/"+ItemName+".gif";
+		function play(ItemUpdate) { 
+ 		 document.getElementById('myAudio').src = "audio/fixed-"+ItemUpdate+".mp3";
+ 		 var x = document.getElementById("myAudio");
+ 		 x.play();
+		} 
+		function load(ItemUpdate) { 
+ 		 document.getElementById('myGif').src = "animation/"+ItemUpdate+".gif";
+		}
+		function load_right(y) {
+			y=y+1;
+			document.getElementById('myGif').src = "animation/"+y+".gif";
+			return ItemUpdate=y;
+		} 
+		function load_left(y) { 
+ 		 y=y-1;
+ 		 document.getElementById('myGif').src = "animation/"+y+".gif";
+		 return ItemUpdate=y;
+		} 
+	</script>
+</body>
+</html>
