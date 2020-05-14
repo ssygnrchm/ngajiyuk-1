@@ -10,26 +10,54 @@
 	<audio id="myAudio">
   		<source src="audio/qa.mp3" type="audio/ogg">
 	</audio>
+	<audio id="correct">
+		<source src="audio/correct.mp3" type="audio/ogg">
+	</audio>
+	<audio id="wrong">
+		<source src="audio/wrong.mp3" type="audio/ogg">
+	</audio>
 	<script type="text/javascript">
 		var x = document.getElementById("myAudio");
+		var y = document.getElementById("correct");
+		var z = document.getElementById("wrong");
 		function play() { 
- 		 x.play(); 
+ 			x.play(); 
 		} 
+		function correct(){
+			y.play();
+		}
+		function wrong(){
+			z.play();
+		}
+		function bigRep(x) {
+  			x.style.width = "66px";
+		}
+
+		function normalRep(x) {
+		  x.style.width = "65px";
+		}
+		function bigImg(x) {
+  			x.style.width = "96px";
+		}
+
+		function normalImg(x) {
+		  x.style.width = "95px";
+		}
 
 	</script>
 	<div class="container">
 		<div class="back">
 			<div class="frame">
 				<div class="atas">
-					<a href="home.html"><img src="image/tombol/back.png" width="65px"></a>
-					<img src="image/tombol/tebaksuara/replay.png" onclick="play()" width="65px" style="margin-left: 110px;cursor: pointer;">
+					<a href="home.php"><img src="image/tombol/back.png" width="65px"></a>
+					<img src="image/tombol/tebaksuara/replay.png" onclick="play()" onmouseenter="bigRep(this)" onmouseleave="normalRep(this)" width="65px" style="margin-left: 110px;cursor: pointer;">
 				</div>
 				<div class="huruf">
-					<a href="https://www.w3schools.com"><img src="image/tombol/tebaksuara/ma.png" width="95px" ></a>
-					<a href="https://www.w3schools.com"><img src="image/tombol/tebaksuara/qa.png" width="95px" style="margin-left: 180px"></a>
+					<img src="image/tombol/tebaksuara/ma.png" onclick="wrong()" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" width="95px" style="cursor: pointer" >
+					<img src="image/tombol/tebaksuara/qa.png" onclick="correct()" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" width="95px" style="margin-left: 180px;cursor: pointer;">
 				</div>
-				<a href="https://www.w3schools.com"><img src="image/tombol/tebaksuara/fa.png" width="95px" style="margin-left: 180px;"></a>
-				<img src="image/cat5.png" width="255px" height="200px" style="margin-bottom: 10px">
+				<img src="image/tombol/tebaksuara/fa.png" onclick="wrong()" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" width="95px" style="margin-left: 180px;cursor: pointer">
+				<img src="image/cat5.png" width="255px" height="200px" style="margin-bottom: 10px;">
 			</div>
 		</div>
 	</div>
